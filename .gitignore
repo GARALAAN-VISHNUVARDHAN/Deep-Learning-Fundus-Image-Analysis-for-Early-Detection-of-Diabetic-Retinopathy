@@ -1,0 +1,11 @@
+*.pt
+*.pth
+*.h5
+*.pkl
+*.zip
+*.csv
+data/
+dataset/
+__pycache__/
+*.pyc
+db.sqlite3
