@@ -13,7 +13,7 @@ DR_CLASSES = {
 }
 
 # Load pretrained ResNet50
-model = models.resnet50(pretrained=True)
+model = models.resnet50(weights=None)
 
 # Replace last fully connected layer
 model.fc = nn.Linear(model.fc.in_features, 5)
@@ -40,7 +40,7 @@ def classify_dr(image_path):
     image = Image.open(image_path).convert("RGB")
     image = transform(image).unsqueeze(0)  # Add batch dimension
 
-    with torch.no_grad():
+    with torch.inference_mode():
         outputs = model(image)
         predicted_class = torch.argmax(outputs, dim=1).item()
 
