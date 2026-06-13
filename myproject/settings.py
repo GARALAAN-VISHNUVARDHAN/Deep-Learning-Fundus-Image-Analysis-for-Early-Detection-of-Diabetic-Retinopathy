@@ -26,6 +26,9 @@ SECRET_KEY = 'django-insecure-an2v))yx6n(ykw4^d=36%u80h^5w6&(s39xylw%y4l$ra6sob2
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://deep-learning-fundus-image-analysis-for-xajz.onrender.com",
+]
 
 
 # Application definition
