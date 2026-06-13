@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-an2v))yx6n(ykw4^d=36%u80h^5w6&(s39xylw%y4l$ra6sob2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["deep-learning-fundus-image-analysis-for-xajz.onrender.com",
+    "localhost",
+    "127.0.0.1",]
 
 
 # Application definition
